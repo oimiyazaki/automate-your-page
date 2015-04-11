@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>My Webpage Notes - Stage 2</title>
+	<link rel="stylesheet" type="text/css" href="lecture-notes.css">
+</head>
+<body>
+	<div> <!-- Start Lecutre notes start -->
+		<h1>Stage 2: Lecture Notes</h1>
+		
+		<div class="lecture"> <!-- Start Lecture 1 -->
+			<h2 id="lecture-1">Lecture 1: Introduction to "Serious" Programming</h2>
+			<div class="concept">
+				<h3>What is programming</h3>	
+				<p>Programming is something that tells the computer what to do. It is a very precise sequence of steps. </p>
+			</div>
+
+			<div class="concept">
+				<h3>Getting started with Python</h3>	
+				<p>An interpreter where we can write code and the interpreter will tell the computer what to do. 
+				</p>
+			</div>
+			<div class="concept">
+				<h3>Language Ambiguity  </h3>	
+				<p>Current spoken language are ambiguous. Programming languages are exact. 
+			</p>
+			</div>
+			<div class="concept">
+				<h3>Grammar</h3>	
+				<p>Syntax is important to communicate correctly with the program. 
+					<ul>
+						<li>Sentence -&gt Subject   Verb   Object</li>
+						<li>Subject -&gt Noun</li>
+						<li>Object -&gt Noun</li>				
+						<li>Verb -&gt Eat, Like</li>					
+						<li>Noun -&gt I, Python, Cookies</li>
+					</ul> 
+				On the right we have non-terminals. One the left are terminals. 
+			</p>
+			</div>
+			<div class="concept">
+				<h3>Summary</h3>	
+				<p>Programming is a set of instructions that communicate with a computer. Language specifically were develop for programming because spoken languages are vague. Computers need no ambiguity to they perform the desired tasks exactly. For this we need to have the correct syntax that computers can understand. 
+			</p>
+		</div>
+
+		<div class="lecture-2"> <!-- Start Lecture 2 -->
+			<h2 id="lecture-2">Lecture 2: Variables and Strings</h2>
+			<div class="concept">
+				<h3>Variables</h3>	
+				<p>Assignment statement puts a number in a variable </p>
+				<p>speed_of_light = 299792458</p>
+			</p>
+			</div>
+			<div class="concept">
+				<h3>Variables Can Vary </h3>	
+				<p>Variables can vary as in</p> 
+
+				<p>x = 1<br>
+				x = x +1<br>
+				x = 2<br>
+				</p>
+				<p>variables need to be defined (or receive an assignment) before they can be used.
+				</p>
+			</div>
+			<div class="concept">
+				<h3>Strings</h3>	
+				<p>Need to start and end with quotes ('Hello') or double quotes ("Hello"). They both do the same.</p> 
+
+				<p>You can also create multi-line strings by adding triple quotes such asHello  pr ''''Hello''''' .
+				A good rule of thumb is not to start variable with capital letters.</p>
+
+				<p>print multiple string in one line by adding a comma in between items. <br>
+				y = "Hello'<br>
+				x = 'world!' <br>
+				print y, x<br>
+				&gt&gt&gt Hello World!
+				</p>
+			</div>
+			<div class="concept">
+				<h3>Strings And Numbers</h3>	
+				<p>You can't concatenate strings and integers.</p> 
+
+				<p>You can multiply and add strings </p>
+			</p>
+			</div>
+			<div class="concept">
+				<h3>Indexing Strings</h3>	
+				<p>&ltstring&gt [&ltexpression&gt]</p>
+
+				<p>'udacity' [0] -&gt 'u'<br>
+
+				'udacity' [1+1] -&gt 'a'
+				</p>
+			</div>
+			<div class="concept">
+				<h3>Selecting Sub Sequences </h3>	
+				<p>&ltstring&gt.[&ltexpression&gt:&ltexpression&gt]</p>
+
+				<p>word = 'assume'<br>
+				print world[4:6]<br>
+				&gt&gt me</p>
+
+				<p>print world[:2]<br>
+				&gt&gtas
+				</p>
+			</div>
+			<div class="concept">
+				<h3>Finding Strings in Strings </h3>	
+				<p>&ltstring&gt.find(&ltstring&gt)</p>
+
+				<p>You will receive the position where the target string starts</p>
+
+				<p>If target string is not found result will be -1
+				</p>
+			</div>
+			<div class="concept">
+				<h3>Finding with Numbers</h3>	
+				<p>&ltstring&gt.find(&ltstring, &ltnumber&gt)</p>
+
+				<p>You will receive number that gives first position in search string where target string appears at or after the number. 
+				</p>
+			</div>
+			<div class="concept">
+				<h3>Summary</h3>	
+				<p>Variables are powerful tools to help write code. They are variable in that they can change and obtain new values. They also make it easy for humans to understand the code written.</p> 
+
+				<p>Beyond using number, Python also understand strings. Strings are characters. Strings are index and there are many ways to find and split them. 
+				</p>
+			</div>
+		</div>
+
+		<div class="lecture-3"> <!-- Start Lecture 3 -->
+			<h2 id="lecture-3">Lecture 3: Input -> Function -> Output</h2>
+
+		<div class="concept">
+			<h3>Using Functions</h3>	
+			<p>&ltfunction&gt(&ltinput&gt,&ltinput&gt,...)</p>
+
+			<p>def rest_of_string(s): <br>
+			<span class="indent-lame">return s[1:]</span></p>
+
+			<p>print rest_of_string('audacity') <br>
+			&gt&gt&gt udacity <br>
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Sum Procedure Solution </h3>	
+			<p>The return statement is the output to a function. Without a return there is not output that computer remembers.
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Function Syntax</h3>	
+			<p>def function_name(input_1, input_2): <br>
+		    <span class="indent-lame">return input_1 + input_2</span></p>
+
+			<p>Remember to add a colon <br>
+			Indent every line after the def <br>
+			Without the return, the function will produce no output.</p>
+
+			<p>Once the function is written. You can use it by using the function name and insert inputs within the parentheses. You need to print the result of the function to see it. 
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Return</h3>	
+			<p>To me return, is like saying, this is the output of the definition.<br>
+			<p>Return says, stop executing this function. We've either got what we wanted or something's gone wrong!
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Summary</h3>	
+			<p>What CSS is to styling HTML, functions are to avoid repetitive operations. They take in inputs and produce outputs--meanwhile the function a return. The return is the output of the function. 
+			</p>
+		</div>
+
+
+
+		</div>
+		<div class="lecture-4"> <!-- Start Lecture 4 -->
+			<h2 id="lecture-4">Lecture 4: Decisions and Repetition: If and While</h2>
+		<div class="concept">
+			<h3>Equal sign in Python</h3>	
+			<p>This means both of these items are equal: 7 == 7 <br>
+			This means not equal: 7 !== 10</p>
+
+			<p>Boolean is a situation where the equation produces a True or False
+			</p>
+		</div>
+		<div class="concept">
+			<h3>If Statement</h3>	
+			<p>if &ltText Expression&gt: <br>
+		    <span class="indent-lame">&ltBlock&gt</span><p>
+
+			<p>If the &ltTest Expression&gt is not true, the &ltBlock&gt will not execute. <br>
+			The next expression that doesn't use if will be executed</p>
+
+			<p>else: <br>
+		    <span class="indent-lame">&ltBlock&gt</span>
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Or</h3>	
+			<p>&ltExpression&gt or &ltExpression&gt</p>
+
+			<p>If the first expression evaluates to True, the value is True and the second expression is not evaluated. 
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Loops</h3>	
+			<p>while &ltTest Expression&gt: <br>
+		    <span class="indent-lame">&ltBlock&gt</span></p>
+
+			<p>Keeps on going meanwhile the expression is True. Doesn't move onto the next step until the expression is false.</p>
+
+			<p>Example: <br><br>
+
+			i = 0<br>
+			while = i &lt 5: <br>
+				<span class="indent-lame">print i</span><br>
+			    <span class="indent-lame">i = i + 1</span><br><br>
+
+			&gt&gt&gt 0<br>
+			&gt&gt&gt 1<br>
+			&gt&gt&gt 2<br>
+			&gt&gt&gt 3<br>
+			&gt&gt&gt 4<br>
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Break Statement</h3>	
+			<p>while &ltText Expression&gt: <br>
+		    <span class="indent-lame">&ltCode&gt</span><br>
+		    <span class="indent-lame">if &ltBreak Test&gt:</span><br>
+		          
+		          <span class="indent-lame-x2">break</span><br>
+		    <span class="indent-lame">&ltMore Code&gt</span><br>
+			&ltNext code&gt</p>
+
+			<p>Meanwhile Break is not true, it continues to run the while loop. <br>
+			When Break test is true, it skips the while loop and goes to the next code outside the while loop<br>
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Summary</h3>	
+			<p>If statements are very powerful in that it lets you give python the ability to make a decision. With the if statement you can make a program do any computation. The loop makes computations much easier and less repetitive. <br>
+			</p>
+		</div>
+		</div>
+		<div class="lecture-5"> <!-- Start Lecture 5 -->
+			<h2 id="lecture-5">Lecture 5: Debugging</h2>
+		<div class="concept">
+			<h3>Examine error messages</h3>	
+			<p>The error message tells you the point that the code failed. It can be at that point (line) or any place before.</p> 
+
+			<p>Read the error and try to understand it. If you don't, Google the error. 
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Working from and example you know works</h3>	
+			<p>Sometimes you copy an example of code that works but doesn't work for you. You can try to rebuild the example in part to make sure you didn't miss something while copying or replacing data.
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Make sure the examples work! </h3>	
+			<p>Something the code you copy for elsewhere (Internet) may be wrong and must be checked. 
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Check intermediate results</h3>	
+			<p>Split code into section and add print statements to ensure each part of the code does the correct thing.</p>
+			<p>Remove print statements after you are done debugging. 
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Keep and compare old versions</h3>	
+			<p>Comment out parts of code<br>
+			Make sections of code into a large strings <br>
+			You can't rely on undo functions<br>
+			Paste code into another file<br>
+			Use git systems that sore code throughout various versions
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Summary</h3>	
+			<p>Bugs are a part of programming. They let them frustrate you. More importantly, is understand how to break down a problem and use various debugging techniques plus patience to get code to work. 
+			</p>
+		</div>
+		</div>
+		<div class="lecture-6"> <!-- Start Lecture 6 -->
+			<h2 id="lecture-6">Lecture 6: Structure Data and For Loops</h2>
+		<div class="concept">
+			<h3>Introduction</h3>	
+			<p>&ltlist&gt -&gt [&ltexpression&gt, &ltexpression&gt,...]</p>
+			<p>You can add numbers, characters, strings, or list. </p>
+			<p>You can create list that are empty and lists with one item.
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Nested Lists</h3>	
+			<p>You can place lists inside of lists.</p>
+			<p>For reading clarity, you can place lists in multiple lines. When separating lines, add the space at the end of a communicate. </p>
+
+			<p/>How to get a indexes item from a list in a list.</p> 
+
+			<p>beatles = [['John', 1940], ['Paul', 1942],<br>
+			                    <span class="indent-lame-x2">['George', 1943], ['Ringo', 1940]]</span></p>
+
+			<p>print beatles[3]<br>
+			&gt&gt&gt ['Ringo', 1940]</p>
+
+			<p>print beatles[3][0]<br>
+			&gt&gt&gt Ringo</p>
+
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Mutation</h3>	
+			<p>p = ['H', 'e', 'l', 'l', 'o']<br>
+			p[o] = 'Y'</p>
+
+			<p>print p<br>
+			&gt&gt&gt ['Y', 'e', 'l', 'l', 'o']
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Yello Mutation</h3>	
+			<p>Because lists are mutable, changing a list, will change all of the information everywhere that that lists feeds into.</p>
+
+			<p>p = ['H', 'e', 'l', 'l', 'o']<br>
+			q = p<br>
+			print p, y<br>
+			&gt&gt&gt['H', 'e', 'l', 'l', 'o'] ['H', 'e', 'l', 'l', 'o']<br><br>
+
+			p[o] = 'Y'</p>
+
+			<p>print p, y<br>
+			&gt&gt&gt['Y', 'e', 'l', 'l', 'o'] ['Y', 'e', 'l', 'l', 'o']
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Aliasing</h3>	
+			<p>When we have two ways to refer to the same object that is called aliasing.  
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Append</h3>	
+			<p>Append is like a procedure, but it's a method. Append will add a new element to a list.</p>
+
+			<p>It does not create a new list, it mutates it. </p>
+
+			<p>&ltlist&gt.append(&ltelement&gt)</p>
+
+			<p>stooges = ['Moe', 'Larry', 'Curly']<br>
+			print stooges = ['Moe', 'Larry', 'Curly']</p>
+
+			<p>stooges.append('Sherp')<br>
+			print stooges = ['Moe', 'Larry', 'Curly', 'Sherp']
+			</p>
+		</div>
+		<div class="concept">
+			<h3>len operator</h3>	
+			<p>provides the number of elements. <br>
+			len(&ltlist&gt)</p>
+
+			<p>len also works for other things like strings. </p>
+
+			<p>len("Udacity") <br> 
+			-&gt 7 
+			</p>
+		</div>
+		<div class="concept">
+			<h3>List Addition and Length</h3>	
+			<p>This is like concatenation</p>
+
+			<p>&ltlist&gt + &ltlist&gt<br>
+
+			[0, 1] + [2, 3]  -&gt [0, 1, 2, 3]</p>
+
+			<p>Len only counts the outer elements. </p>
+
+			<p>len(&ltlist&gt)</p>
+			<p>len([0, 1])  -&gt 2<br>
+			len(['a', ['b', ['c']]])  -&gt 2</p>
+			</p>
+		</div>
+		<div class="concept">
+			<h3>For Loops</h3>	
+			<p>&ltname&gt is a variable. For each element in the list, we are going to assign every element the variable &ltname&gt and take it through the &ltBlock&gt. In order. </p>
+
+			<p>for &ltname&gt in &ltlist&gt: <br>
+			     <span class="indent-lame">&ltBlock&gt</span></p> 
+
+			<p>def print e in p: <br>
+			     <span class="indent-lame">for e in p:</span> <br>
+			          <span class="indent-lame-x2">print e</span>
+			</p>
+
+
+			<p>mylist = [1, 2, [3, 4]]</p>
+
+			<p>print_all_elements(mylist)<br>
+			&gt&gt&gt1<br>
+			&gt&gt&gt2<br>
+			&gt&gt&gt[3, 4]
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Index</h3>	
+			<h4>Index</h4>
+			<p>&ltlist&gt.index(&ltvalue&gt)</p>
+
+			<p>The output of index is the first position of of the value. </p>
+
+			<p>Unlike find, when it doesn't find the value, it returns error instead of -1. </p>
+
+			<h4>in</h4>
+			<p>&ltvalue&gt in &ltlist&gt </p>
+
+			<p>p = [0, 1, 2]<br>
+			print 2 in p <br>
+			&gt&gt&gt True</p>
+
+			<p>print 3 in p <br>
+			&gt&gt&gt False</p>
+
+			<h4>not in </h4>
+			<p>returns a True or False</p>
+			<p>&ltvalue&gt not in &ltlist&gt </p>
+
+			<p>&ltvalue&gt not in &ltlist&gt  &lt= same =&gt  not &ltvalue&gtin &ltlist&gt</p>
+			</p>
+		</div>
+		<div class="concept">
+			<h3>Summary</h3>	
+			<p>Loops are a very useful tool. It has similarities as string but has major advantages. You can Some of these advantages are mutation. By mutating one list you an update the content that it feeds into everywhere. You can also append items to lists and find thing easily using the index procedure.
+			</p>
+		</div>
+		</div>
+
+		<div class="lecture-7"> <!-- Start Lecture 7 -->
+			<h2 id="lecture-7">Stage 2: Work Session 5</h2>
+		<div class="concept">
+			<h3>Exploring List Properties</h3>	
+			<p>
+				+ doesn't mutate a list but creates a copy of it with the addition<br>
+				.append() mutates a list by adding one value <br>
+				+= adds two values onto a list with mutation
+			</p>
+			<p>
+				+ Sign<br>
+				p1 = ['a', 'b', 'c']<br>
+				pnew = p1 + [1, 2, 3]
+			</p>
+			<p>
+				print pnew<br>
+				&gt&gt&gt ['a', 'b', 'c', 1, 2, 3]<br>
+				print p1<br>
+				&gt&gt&gt ['a', 'b', 'c']
+			</p>
+			<p>
+				.append<br>
+				p1 = ['a', 'b', 'c']<br>
+				p1.append.(5)
+			</p>
+			<p>
+				print p1<br>
+				&gt&gt&gt ['a', 'b', 'c', 5]
+			</p>
+			<p>
+				+= Sign<br>
+				p1 = ['a', 'b', 'c']<br>
+				p1 += [1, 2, 3]
+			</p>
+			<p>
+				print p1<br>
+				&gt&gt&gt ['a', 'b', 'c', 1, 2, 3]
+			</p>
+		</div>
+		</div>
+	</div> <!-- End Lecutre notes start -->
+</body>
+</html>
+
+
